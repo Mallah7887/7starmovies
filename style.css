@@ -1,38 +1,6 @@
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #111;
-  color: white;
-}
-header {
-  padding: 1rem;
-  background-color: #222;
-  text-align: center;
-}
-#searchInput {
-  margin-top: 10px;
-  padding: 0.5rem;
-  width: 80%;
-  max-width: 400px;
-}
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-.movie-card {
-  width: 150px;
-  text-align: center;
-  background: #333;
-  padding: 10px;
-  border-radius: 10px;
-}
-.movie-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+body {font-family: Arial; margin: 0; padding: 0;}
+header {background: #222; color: #fff; padding: 10px; text-align: center;}
+nav a {color: #fff; margin: 0 10px; text-decoration: none;}
+.movie-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; padding: 10px;}
+.movie-grid img {width: 100%; border-radius: 8px; box-shadow: 0 0 10px #aaa;}
+.movie-grid p {text-align: center; color: #000;}

@@ -4,138 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>7Star Movies</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-    }
-    header {
-      background-color: #008c3f;
-      color: white;
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .logo span {
-      color: orange;
-      font-style: italic;
-    }
-    .search-box {
-      margin-top: 10px;
-      flex: 1 1 100%;
-      display: flex;
-      justify-content: center;
-    }
-    .search-box input {
-      width: 90%;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .categories {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: #008c3f;
-      padding: 10px;
-      justify-content: center;
-      gap: 10px;
-    }
-    .categories button {
-      background-color: orange;
-      border: none;
-      padding: 10px 15px;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .description {
-      background-color: #008c3f;
-      color: white;
-      padding: 10px;
-      margin: 10px;
-      border-radius: 4px;
-      text-align: center;
-    }
-    .movie-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 15px;
-      gap: 20px;
-    }
-    .movie-card {
-      width: 150px;
-      text-align: center;
-    }
-    .movie-card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .movie-card p {
-      margin-top: 5px;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div class="logo">7Star<span>Movies</span></div>
-    <div class="search-box">
-      <input type="text" placeholder="Search Movies... 🔍">
-    </div>
+    <div class="logo">🎬 7Star <span>Movies</span></div>
+    <input type="text" placeholder="Search Movies..." />
   </header>
 
-  <!-- Categories -->
-  <nav class="categories">
-    <button>300MB</button>
-    <button>Bollywood</button>
-    <button>Dual Audio</button>
+  <nav>
+    <button>300MB Movies</button>
+    <button>Bollywood Movies</button>
+    <button>Dual Audio Movies</button>
     <button>Hindi Dubbed</button>
     <button>Hollywood</button>
     <button>TV Shows</button>
   </nav>
 
-  <!-- Description -->
-  <section class="description">
-    7Star Movies: Bollywood, Hollywood, Hindi Dubbed, 480p, 720p, 1080p Movies Download - Fast & Safe Downloads.
-  </section>
+  <main>
+    <section class="movies">
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x280.png?text=Movie+1" alt="Movie 1" />
+        <p>The Return of The Sardar</p>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x280.png?text=Movie+2" alt="Movie 2" />
+        <p>Kala Samrat</p>
+      </div>
+      <!-- Add more movies here -->
+    </section>
+  </main>
 
-  <!-- Movie Grid -->
-  <section class="movie-grid">
-    <div class="movie-card">
-      <img src="https://via.placeholder.com/150x220?text=Movie+1" alt="Movie 1">
-      <p>Movie Title 1</p>
-    </div>
-    <div class="movie-card">
-      <img src="https://via.placeholder.com/150x220?text=Movie+2" alt="Movie 2">
-      <p>Movie Title 2</p>
-    </div>
-    <!-- Add more movie cards as needed -->
-  </section>
-
-  <!-- Footer -->
   <footer>
     © 2025 7Star Movies. All rights reserved.
   </footer>
-
 </body>
 </html>

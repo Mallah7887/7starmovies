@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>7StarMovies</title>
+  <title>7Star Movies</title>
   <style>
     body {
       margin: 0;
@@ -17,19 +17,30 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
     .logo {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
     }
     .logo span {
       color: orange;
       font-style: italic;
     }
-    .search {
-      font-size: 20px;
-      cursor: pointer;
+    .search-box {
+      margin-top: 10px;
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
     }
+    .search-box input {
+      width: 90%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
     .categories {
       display: flex;
       flex-wrap: wrap;
@@ -53,6 +64,7 @@
       padding: 10px;
       margin: 10px;
       border-radius: 4px;
+      text-align: center;
     }
     .movie-grid {
       display: flex;
@@ -86,8 +98,10 @@
 
   <!-- Header -->
   <header>
-    <div class="logo">TheKhatri<span>MAZA</span></div>
-    <div class="search">&#128269;</div>
+    <div class="logo">7Star<span>Movies</span></div>
+    <div class="search-box">
+      <input type="text" placeholder="Search Movies... 🔍">
+    </div>
   </header>
 
   <!-- Categories -->
@@ -102,7 +116,7 @@
 
   <!-- Description -->
   <section class="description">
-    TheKhatrimaza, Khatrimaza, Dual Audio Movies In 480p, 720p, 300mb, Hindi Dubbed Series Download at khatrimaza.pro
+    7Star Movies: Bollywood, Hollywood, Hindi Dubbed, 480p, 720p, 1080p Movies Download - Fast & Safe Downloads.
   </section>
 
   <!-- Movie Grid -->
@@ -115,16 +129,12 @@
       <img src="https://via.placeholder.com/150x220?text=Movie+2" alt="Movie 2">
       <p>Movie Title 2</p>
     </div>
-    <div class="movie-card">
-      <img src="https://via.placeholder.com/150x220?text=Movie+3" alt="Movie 3">
-      <p>Movie Title 3</p>
-    </div>
-    <!-- Add more cards as needed -->
+    <!-- Add more movie cards as needed -->
   </section>
 
   <!-- Footer -->
   <footer>
-    © 2025 TheKhatriMAZA. All rights reserved.
+    © 2025 7Star Movies. All rights reserved.
   </footer>
 
 </body>

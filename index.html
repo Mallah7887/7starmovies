@@ -1,17 +1,50 @@
-<div class="navbar">
-  <img src="logo.png" alt="Logo" class="logo">
-  <div class="nav-buttons">
-    <button>300MB Movies</button>
-    <button>Bollywood Movies</button>
-    <button>Dual Audio</button>
-    <button>Hindi Dubbed</button>
-    <button>Hollywood Movies</button>
-    <button>TV Shows</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7StarMovies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <div class="nav-buttons">
+      <button>300MB Movies</button>
+      <button>Bollywood</button>
+      <button>Dual Audio</button>
+      <button>Hindi Dubbed</button>
+      <button>Hollywood</button>
+      <button>TV Shows</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Movies..." />
+      <button onclick="searchMovie()">🔍</button>
+    </div>
   </div>
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search Movies...">
-    <button onclick="searchMovie()">
-      🔍
-    </button>
+
+  <div class="movie-list">
+    <div class="movie-card">
+      <a href="movie-links/movie1.html">
+        <img src="images/movie1.jpg" alt="Movie 1" />
+        <h3>The Real Hero (2022)</h3>
+      </a>
+    </div>
+    <div class="movie-card">
+      <a href="movie-links/movie2.html">
+        <img src="images/movie2.jpg" alt="Movie 2" />
+        <h3>Mission Impossible (2023)</h3>
+      </a>
+    </div>
+    <div class="movie-card">
+      <a href="movie-links/movie3.html">
+        <img src="images/movie3.jpg" alt="Movie 3" />
+        <h3>Pushpa 2 (2024)</h3>
+      </a>
+    </div>
   </div>
-</div>
+
+  <script src="search.js"></script>
+</body>
+</html>

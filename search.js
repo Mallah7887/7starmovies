@@ -1,8 +1,7 @@
 function searchMovie() {
   let input = document.getElementById("searchInput").value.toLowerCase();
-  let allMovies = document.querySelectorAll(".movie-card");
-
-  allMovies.forEach(function (card) {
+  let cards = document.querySelectorAll(".movie-card");
+  cards.forEach(card => {
     let title = card.innerText.toLowerCase();
     if (title.includes(input)) {
       card.style.display = "block";

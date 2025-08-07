@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>7StarMovies</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <h1>7StarMovies – Latest Movies</h1>
-
-  <div class="movie-grid">
-    <div class="movie-card">
-      <a href="movie-links/wednesday.html">
-        <img src="images/wednesday.jpg" alt="Wednesday">
-        <p>Wednesday (2025) NF Hindi ORG S01E[01-04]</p>
-      </a>
-    </div>
-    <!-- Add 19 more movie blocks here -->
+<div class="navbar">
+  <img src="logo.png" alt="Logo" class="logo">
+  <div class="nav-buttons">
+    <button>300MB Movies</button>
+    <button>Bollywood Movies</button>
+    <button>Dual Audio</button>
+    <button>Hindi Dubbed</button>
+    <button>Hollywood Movies</button>
+    <button>TV Shows</button>
   </div>
-
-  <div class="pagination">
-    <a href="#" class="active">1</a>
-    <a href="page2.html">2</a>
-    <a href="page3.html">3</a>
-    <span>...</span>
-    <a href="page821.html">821</a>
-    <a href="page2.html">Next ➤</a>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search Movies...">
+    <button onclick="searchMovie()">
+      🔍
+    </button>
   </div>
-
-</body>
-</html>
+</div>
